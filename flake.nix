@@ -27,8 +27,7 @@
           devShell = pkgs.mkShell {
             nativeBuildInputs = with pkgs; [
               rust-stable
-              # We want this one for ca65, an assembler for 6502 assembly
-              cc65
+	      rust-analyzer
             ];
           };
         }
